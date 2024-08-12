@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    font-family: sans-serif;
+}
+#cross{
+    height: 30px;
+    position: relative;
+    left: 220px;
+}
+#header {
+  display: flex;
+}
+#search-box1 {
+    width: 100px ;
+}
+#container {
+ width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#search-img {
+    height: 30px;
+    position: relative;
+    right: 40px;
+    top: 5px;
+
+}
+#search-img:hover {
+    height: 33px;
+    cursor: pointer;
+
+}
+#container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+#search-box {
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+}
+#search-box input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 16px;
+}
+#search-box .search-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #ccc;
+    
+}
+#friend-list {
+    list-style: none;
+    padding: 0;
+}
+.friend-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+.friend-item .profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.friend-item .friend-info {
+    flex-grow: 1;
+}
+.friend-item .friend-name {
+    font-weight: bold;
+    font-size: 16px;
+}
+.friend-item .friend-followers {
+    color: #777;
+    font-size: 14px;
+}
+.friend-item .checkbox {
+    margin-left: auto;
+    transform: translateY(-2px);
+}
+#share-invite-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+#share-invite-btn:hover {
+    background-color: #0056b3
+}
+
+
+
+    
+    
+
+
+.share-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.share-title h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.share-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.share-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.share-option img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+.cancel-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.share-container {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: none; /* hide the share popup by default */
+    width: 300px;
+  }
+  
+  .share-container.visible {
+    display: block; /* show the share popup when the visible class is added */
+  }
+  .share-container {
+    display: none;
+  }
+  
+  .share-container.show {
+    display: block;
+  }
+  
